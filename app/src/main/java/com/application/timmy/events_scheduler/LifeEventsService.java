@@ -93,8 +93,8 @@ public class LifeEventsService extends Service{
 
         alarm.set(
                 alarm.RTC_WAKEUP,
-                //System.currentTimeMillis() + (1000 * 60 * 2),
-                System.currentTimeMillis() + (1000 * 30),
+                System.currentTimeMillis() + (1000 * 60 * 2),
+              //  System.currentTimeMillis() + (1000 * 30),
                 PendingIntent.getService(this, 0, newServiceIntent, PendingIntent.FLAG_UPDATE_CURRENT)
         );
     }

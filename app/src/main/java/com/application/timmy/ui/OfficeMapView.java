@@ -377,7 +377,9 @@ public class OfficeMapView extends View implements BECommunicator {
             Bitmap personBitmap = person.getPhotoBitmap();
 
             if (personBitmap != null)
-                canvas.drawBitmap(personBitmap, mOffset + person.getDeskX()*mCellDim - targetPicW/2, mOffset + person.getDeskY()*mCellDim - targetPicH/2, null);
+               // canvas.drawBitmap(personBitmap, null, mOffset + person.getDeskX()*mCellDim - targetPicW/2, mOffset + person.getDeskY()*mCellDim - targetPicH/2, null);
+                canvas.drawBitmap(personBitmap, null, new Rect(mOffset + person.getDeskX()*mCellDim - targetPicW/2, mOffset + person.getDeskY()*mCellDim - targetPicH/2
+                        ,mOffset + person.getDeskX()*mCellDim + targetPicW/2, mOffset + person.getDeskY()*mCellDim + targetPicH/2), null);
         }
 
         for (PersonModel person : personsList){

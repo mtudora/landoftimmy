@@ -17,7 +17,6 @@
             android:id="@+id/personMenuImg"
             android:layout_width="@dimen/person_details_picture_width"
             android:layout_height="@dimen/person_details_picture_height"
-            android:src="@drawable/alec_upload"
             android:layout_gravity="center"
             android:layout_marginBottom="@dimen/person_details_vertical_pad"
             />

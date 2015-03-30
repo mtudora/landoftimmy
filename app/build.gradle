@@ -4,6 +4,13 @@ android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
 
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
     defaultConfig {
         applicationId "timmy.application.com.landoftimmy"
         minSdkVersion 9
@@ -11,13 +18,41 @@ android {
         versionCode 1
         versionName "1.0"
     }
-    buildTypes {
+    signingConfigs {
         release {
+            storeFile file("timmy-release-key.keystore")
+            storePassword "landoftimmy"
+            keyAlias "landoftimmmy"
+            keyPassword "landoftimmy"
+        }
+    }
+    buildTypes {
+        debug {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+
+        release {
+            minifyEnabled true  // this is the new proguard
+            signingConfig signingConfigs.release
+            proguardFiles 'proguard-rules.pro'
+            applicationIdSuffix ""
+            versionNameSuffix ""
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def file = output.outputFile
+                    def fileName = file.name.replace("-release.apk", ".apk")
+                    output.outputFile = new File(file.parent, fileName)
+                }
+            }
         }
     }
 }
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
@@ -25,4 +60,5 @@ dependencies {
     compile 'com.android.support:support-v4:21.0.0'
     compile 'com.android.support:appcompat-v7:20.+'
     compile 'com.jjoe64:graphview:4.0.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v2.0.8'
 }

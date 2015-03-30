@@ -109,7 +109,7 @@ public class LifeDisplayActivity extends OfficeBaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle presses on the action bar items
         if (item.getItemId() == R.id.action_graph) {
-            Intent newIntent = new Intent(LifeDisplayActivity.this, LifeDepartmentGraph.class);
+            Intent newIntent = new Intent(LifeDisplayActivity.this, BarChartActivityMultiDataset.class);
             startActivity(newIntent);
 
             return true;

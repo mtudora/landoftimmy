@@ -177,9 +177,13 @@ public class AddMeActivity extends OfficeBaseActivity{
         options.inJustDecodeBounds = false;
         Bitmap initialBitmap = BitmapFactory.decodeFile(path, options);
 
+        if (initialBitmap == null)
+            return;
+
         //selfieBitmap = getRoundedShape(initialBitmap);
 
-        selfieBitmap = ThumbnailUtils.extractThumbnail(initialBitmap, (int) getResources().getDimension(R.dimen.target_picture_width), (int) getResources().getDimension(R.dimen.target_picture_height));
+        //selfieBitmap = ThumbnailUtils.extractThumbnail(initialBitmap, (int) getResources().getDimension(R.dimen.target_picture_width), (int) getResources().getDimension(R.dimen.target_picture_height));
+        selfieBitmap = ThumbnailUtils.extractThumbnail(initialBitmap, targetW, targetH);
 
         FileOutputStream out = null;
         try {

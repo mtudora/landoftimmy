@@ -14,7 +14,6 @@
         android:id="@+id/selfiePic"
         android:layout_width="@dimen/selfie_picture_width"
         android:layout_height="@dimen/selfie_picture_height"
-        android:src="@drawable/alec_upload"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/person_details_vertical_pad"
         />
