@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LandOfTimmy</string>
+
+    <string name="spinner_prompt">Choose Life Event</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_edges"
+    android:padding="@dimen/person_details_vertical_pad"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/person_details_vertical_pad">
+
+
+        <ImageView
+            android:id="@+id/personMenuImg"
+            android:layout_width="@dimen/person_details_picture_width"
+            android:layout_height="@dimen/person_details_picture_height"
+            android:src="@drawable/alec_upload"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/person_details_vertical_pad"
+            />
+
+
+        <TextView
+            android:id="@+id/personMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/person_menu_text_size"
+            android:textColor="@color/custom_dark_grey"
+            android:text="Gigel"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <Button
+            android:id="@+id/personDetailsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textSize="@dimen/person_details_text_size"
+            android:textColor="@color/custom_dark_grey"
+            android:text="Show person details"
+            />
+
+
+        <Button
+            android:id="@+id/simulateLifeEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/person_details_text_size"
+            android:textColor="@color/custom_dark_grey"
+            android:text="Simulate life event"/>
+
+    </LinearLayout>
+
+</LinearLayout>

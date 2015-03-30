@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_text">@android:color/black</color>
+
+    <color name="transparent">#00ffffff</color>
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+
+    <color name="custom_dark_grey">#ff646e80</color>
+    <color name="custom_light_grey">#ff9097a2</color>
+
+    <color name="holo_blue_light">#bb0fabfc</color>
+
+    <color name="edittext_text_color">#ff666666</color>
+
+    <color name="font_color_pink">#ffF06EAA</color>
+    <color name="font_color_red">#ffDB2727</color>
+    <color name="font_color_orange">#ffFF8C00</color>
+    <color name="font_color_yellow">#ffFF6E00</color>
+    <color name="font_color_green">#ff00A651</color>
+    <color name="font_color_light_blue">#ff00A6E4</color>
+    <color name="font_color_dark_blue">#ff003CA0</color>
+    <color name="font_color_violet">#ff7D197D</color>
+    <color name="font_color_black">#ff000000</color>
+
+    <color name="packs_saving_text_color">#206C8F</color>
+
+    <drawable name="item_grey_background_drawable">#e6eaee</drawable>
+    <drawable name="item_white_background_drawable">@android:color/white</drawable>
+    <drawable name="transparent_color_drawable">@color/transparent</drawable>
+    <color name="horizontal_separator_color">#d1d1d1</color>
+    <color name="text.normal">#ff646e80</color>
+
+</resources>

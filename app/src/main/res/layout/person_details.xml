@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_edges"
+    android:translationZ="20dp"
+    android:padding="@dimen/person_details_vertical_pad">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/person_details_horizontal_pad">
+
+            <ImageView
+                android:id="@+id/personDetailsImg"
+                android:layout_width="@dimen/person_details_picture_width"
+                android:layout_height="@dimen/person_details_picture_height"
+                android:src="@drawable/alec_upload"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/person_details_vertical_pad"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/person_details_vertical_pad"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Name: "/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/personDetailsName"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Alexandra"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Department: "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/personDetailsDepartment"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Design"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/person_details_vertical_pad"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Morale: "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/personDetailsMorale"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="4444"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/person_details_vertical_pad"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Humour: "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/personDetailsHumour"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="22222"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/person_details_vertical_pad"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="Skill: "/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/personDetailsSkill"
+                    android:textSize="@dimen/person_details_text_size"
+                    android:textColor="@color/custom_dark_grey"
+                    android:text="10000000"/>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

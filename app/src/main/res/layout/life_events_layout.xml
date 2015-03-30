@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_light_grey"
+        android:text="Life Over Department"
+        android:padding="10dp"
+        android:textColor="@color/holo_blue_light"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <ExpandableListView
+        android:id="@+id/listViewDep"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_light_grey"
+        android:text="Life For Persons"
+        android:padding="10dp"
+        android:textColor="@color/holo_blue_light"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <ExpandableListView
+        android:id="@+id/listViewPersons"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/abar_icon"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/showLifeEventsButton"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/action_bar_button_margin_vertical"
+        android:layout_marginTop="@dimen/action_bar_button_margin_vertical"
+        android:background="@drawable/ic_action_add" />
+
+    <Button
+        android:id="@+id/showLifeEventsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/action_bar_button_margin_vertical"
+        android:layout_marginTop="@dimen/action_bar_button_margin_vertical"
+        android:background="@drawable/ic_action_database" />
+
+</RelativeLayout>

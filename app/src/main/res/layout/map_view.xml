@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:android3="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gallerylayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android4="http://schemas.android.com/apk/res/android">
+ 
+    <com.application.timmy.ui.OfficeMapView
+	    xmlns:android="http://schemas.android.com/apk/res/android" 
+	    android:id="@+id/officeMapView"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent" 
+	    />
+
+   <!-- <include layout="@layout/person_menu"
+        android:id="@+id/personMenuLayout"
+        android:visibility="gone"
+        android:layout_width="@dimen/person_details_popup_width"
+        android:layout_height="@dimen/person_details_popup_height"></include> -->
+
+</RelativeLayout>

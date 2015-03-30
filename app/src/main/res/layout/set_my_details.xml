@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="20dp"
+        android:padding="@dimen/person_details_vertical_pad">
+
+    <ImageView
+        android:id="@+id/selfiePic"
+        android:layout_width="@dimen/selfie_picture_width"
+        android:layout_height="@dimen/selfie_picture_height"
+        android:src="@drawable/alec_upload"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/person_details_vertical_pad"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+                <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_gravity="center_horizontal"
+                android:hint="Name"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dep"
+                android:layout_gravity="center_horizontal"
+                android:hint="Department"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/deskX"
+                android:layout_gravity="center_horizontal"
+                android:hint="Desk X"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/deskY"
+                android:layout_gravity="center_horizontal"
+                android:hint="Desk Y"/>
+        </LinearLayout>
+ </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/morale"
+                android:layout_gravity="center_horizontal"
+                android:hint="Morale"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/humour"
+                android:layout_gravity="center_horizontal"
+                android:hint="Humour"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/skill"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:hint="Skill"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dailyMorale"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:hint="Daily Morale"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dailyHumour"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:hint="Daily Humour"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dailySkill"
+                android:inputType="number"
+                android:layout_gravity="center_horizontal"
+                android:hint="Daily Skill"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addSelfie"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="Add me to the office"/>
+</LinearLayout>
+</ScrollView>
